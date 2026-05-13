@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mozzi Blog</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:35px;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+      font-size:18px;
+    }
+
+    .hero{
+      background:linear-gradient(to right,#4facfe,#00f2fe);
+      padding:60px 20px;
+      text-align:center;
+      color:white;
+    }
+
+    .hero h2{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .blog-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+      color:#111;
+    }
+
+    .card-content p{
+      margin-bottom:15px;
+      line-height:1.5;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 15px;
+      background:#111;
+      color:white;
+      text-decoration:none;
+      border-radius:6px;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mozzi Blog</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Health</a>
+      <a href="#">Technology</a>
+      <a href="#">Study</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome To Mozzi Blog</h2>
+    <p>Latest blogs about Health, Technology and Study Tips</p>
+  </section>
+
+  <div class="container">
+
+    <div class="blog-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop" alt="Health">
+
+        <div class="card-content">
+          <h3>5 Healthy Habits For Better Life</h3>
+
+          <p>
+            Learn simple daily habits that can improve your health and make your life more active.
+          </p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Technology">
+
+        <div class="card-content">
+          <h3>Top AI Technologies in 2026</h3>
+
+          <p>
+            Discover the latest AI tools and technologies changing the future of the internet.
+          </p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Study">
+
+        <div class="card-content">
+          <h3>Best Study Tips For Students</h3>
+
+          <p>
+            Improve your focus and learn smart study methods to get better results in exams.
+          </p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Mozzi Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
